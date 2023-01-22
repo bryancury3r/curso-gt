@@ -1,0 +1,23 @@
+:root {
+  --bg-url: url(../assets/bg-light-desktop.jpg);
+  --color-font: #ffff;
+  --color-button: rgb(169, 119, 130);
+  --color-card: #1e212c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
+}
+
+p {
+  color: red;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
