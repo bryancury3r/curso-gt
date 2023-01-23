@@ -1,6 +1,6 @@
 :root {
   --bg-url: url(../assets/bg-light-desktop.jpg);
-  --color-font: #ffff;
+  --text-color: #000;
   --color-button: rgb(169, 119, 130);
   --color-card: #1e212c;
 }
@@ -16,8 +16,48 @@ body {
   height: 100vh;
 }
 
-p {
-  color: red;
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+}
+
+.section-header .title {
+  text-align: center;
+  margin-top: 25px;
   font-family: "Inter", sans-serif;
+}
+
+.section-header .title h1 {
+  font-size: 3rem;
+  line-height: 3.3rem;
+  letter-spacing: -0.05em;
   font-weight: 700;
+
+  text-align: center;
+  margin-bottom: 0.5rem;
+
+  color: rgb(169, 119, 130);
+}
+
+.section-header .title span {
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(90deg, rgb(169, 119, 132) -0.03%, rgb(64, 203, 246) 99.92%)
+    repeat scroll 0% 0% padding-box text;
+  -webkit-text-fill-color: transparent;
+  box-decoration-break: clone;
+  font-size: 2.5rem;
+}
+.section-header .title h2 {
+  font-size: 1.125rem;
+  font-weight: normal;
+  margin-top: 8px;
+  opacity: 0.6;
+  margin-bottom: 32px;
 }
