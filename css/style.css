@@ -1,6 +1,6 @@
 :root {
   --bg-url: url(../assets/bg-light-desktop.jpg);
-  --text-color: #000;
+  --text-color: #ffff;
   --color-button: rgb(169, 119, 130);
   --color-card: #1e212c;
 }
@@ -60,4 +60,33 @@ header img {
   margin-top: 8px;
   opacity: 0.6;
   margin-bottom: 32px;
+}
+
+.section-header .button {
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+}
+
+.section-header .button a {
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(90deg, rgb(169, 119, 132) -0.03%, rgb(64, 203, 246) 99.92%)
+    repeat scroll 0% 0%;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  border-radius: 48px;
+  border: 0px none;
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1.125rem;
+  padding: 16px 28px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-in 0s;
+}
+
+.section-header .button:hover {
+  opacity: 0.8;
 }
