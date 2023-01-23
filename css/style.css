@@ -1,5 +1,6 @@
 :root {
   --bg-url: url(../assets/bg-light-desktop.jpg);
+  --bg-url-dark: url(../assets/bg-desktop-dark.jpg);
   --text-color: #ffff;
   --color-button: rgb(169, 119, 130);
   --color-card: #1e212c;
@@ -26,6 +27,10 @@ header .logo {
 header img {
   width: 150px;
   height: 150px;
+}
+
+.section-header {
+  height: 100vh;
 }
 
 .section-header .title {
@@ -62,6 +67,14 @@ header img {
   margin-bottom: 32px;
 }
 
+.section-header .title p {
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-bottom: 32px;
+
+  opacity: 0.6;
+}
+
 .section-header .button {
   display: flex;
   -moz-box-align: center;
@@ -89,4 +102,9 @@ header img {
 
 .section-header .button:hover {
   opacity: 0.8;
+}
+
+.section-main {
+  background: var(--bg-url-dark) no-repeat top center/cover;
+  height: 100vh;
 }
