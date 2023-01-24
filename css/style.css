@@ -3,6 +3,7 @@
   --bg-url-dark: url(../assets/bg-desktop-dark.jpg);
   --text-color: #ffff;
   --color-button: rgb(169, 119, 130);
+  --bg-rosa-dark: url(../assets/bg-rosa-dark.jpg);
   --color-card: #1e212c;
   --stroke-color: rgba(255, 255, 255, 0.5);
 }
@@ -112,7 +113,7 @@ header img {
 }
 
 .section-content {
-  background: var(--bg-url-dark) no-repeat top center/cover;
+  background: var(--bg-rosa-dark) no-repeat top center/cover;
   height: 100vh;
 
   display: flex;
