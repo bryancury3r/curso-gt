@@ -21,6 +21,9 @@ body {
   width: 100%;
   height: 100%;
   background: var(--bg-url) no-repeat top center/cover;
+  font-weight: 400;
+  /* color: rgb(248, 248, 250); */
+  font-size: 1.125rem;
 }
 
 header .logo {
@@ -56,7 +59,7 @@ header img {
   color: var(--color-button);
 }
 
-.section-header .title span {
+.section-header .title .text-gradient {
   background: rgba(0, 0, 0, 0)
     linear-gradient(90deg, rgb(169, 119, 132) -0.03%, rgb(64, 203, 246) 99.92%)
     repeat scroll 0% 0% padding-box text;
@@ -230,9 +233,41 @@ header img {
 
 .persona {
   height: 100vh;
-  background: rgba(0, 0, 0, 0) url("../assets/bd.png") no-repeat scroll right
-    center;
+  background: rgba(10, 10, 10) url("../assets/cabelo-3.png") no-repeat scroll
+    right center;
   background-position-x: right;
   background-position-y: center;
   border-top: 2px solid var(--border-top);
+}
+
+.persona .is-my {
+  text-align: center;
+  margin: 50px auto 0 auto;
+  padding: 50px;
+}
+
+.persona .is-my h1 {
+  color: rgb(169, 119, 132);
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(90deg, rgb(169, 119, 132) -0.03%, rgb(64, 203, 246) 99.92%)
+    repeat scroll 0% 0% padding-box text;
+  -webkit-text-fill-color: transparent;
+  box-decoration-break: clone;
+
+  font-size: 3rem;
+  line-height: 3.3rem;
+  letter-spacing: -0.05em;
+  font-weight: 700;
+}
+
+.persona .is-my p {
+  line-height: 1.3rem;
+  /* letter-spacing: -0.05em; */
+
+  font-weight: 400;
+  color: rgb(248, 248, 250);
+  font-size: 1.125rem;
+  margin-top: 2rem;
+  color: var(--text-color);
+  line-height: 150%;
 }
