@@ -286,15 +286,23 @@ header img {
 
 .persona .is-my .social {
   display: flex;
+
   flex-direction: column;
   align-self: flex-end;
   margin-left: 48px;
+}
+
+.persona .is-my .social .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .persona .is-my .social .icon img {
   width: 30px;
   border-radius: 10px;
   margin-right: 1rem;
+  text-align: center;
 }
 .persona .is-my .social a {
   background: rgb(169, 119, 132) none repeat scroll 0% 0%;
