@@ -7,6 +7,7 @@
   --color-card: #1e212c;
   --stroke-color: rgba(255, 255, 255, 0.5);
   --border-top: rgb(169, 119, 132);
+  --bg-my: url(../assets/cabelo-3.jpg);
 }
 
 * {
@@ -233,10 +234,14 @@ header img {
 
 .persona {
   height: 100vh;
-  background: rgb(22, 22, 22) url("../assets/cabelo-3.png") no-repeat scroll
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(90deg, rgb(169, 119, 132) -0.03%, rgb(205, 184, 219) 99.92%)
+    repeat scroll 0% 0%;url("../assets/cabelo-3.png") no-repeat scroll
     right center;
+    background: var(--bg-my) no-repeat top center/cover;
   background-position-x: right;
-  background-position-y: center;
+  background-position-y: top;
+
   border-top: 2px solid var(--border-top);
 }
 
@@ -245,6 +250,7 @@ header img {
 }
 
 .persona .is-my .text {
+  width: 550px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -253,7 +259,7 @@ header img {
 
   overflow-x: hidden;
   /* margin: 50px auto 0 auto; */
-  padding: 25px;
+  /* padding: 25px; */
   /* flex-direction: column; */
 }
 
@@ -269,19 +275,18 @@ header img {
   line-height: 3.3rem;
   letter-spacing: -0.05em;
   font-weight: 700;
-  margin: 0 40px;
+  /* margin: 0 40px; */
 }
 
 .persona .is-my p {
   line-height: 150%;
-  /* letter-spacing: -0.05em; */
+  letter-spacing: -0.05em;
   text-align: left;
   font-weight: 400;
   color: rgb(248, 248, 250);
   font-size: 1.125rem;
   margin-top: 2rem;
   color: var(--text-color);
-  line-height: 150%;
 }
 
 .persona .is-my .social {
@@ -305,7 +310,9 @@ header img {
   text-align: center;
 }
 .persona .is-my .social a {
-  background: rgb(169, 119, 132) none repeat scroll 0% 0%;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(90deg, rgb(169, 119, 132) -0.03%, rgb(64, 203, 246) 99.92%)
+    repeat scroll 0% 0%;
   border-radius: 4px;
   padding: 8px 16px;
   display: flex;
