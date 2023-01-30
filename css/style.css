@@ -329,3 +329,12 @@ header img {
 .persona .is-my .social a:hover {
   opacity: 1;
 }
+
+.detail-summary {
+  width: 100%;
+  height: vh;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  
+}
