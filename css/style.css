@@ -23,7 +23,7 @@ body {
   height: 100vh;
   background: var(--bg-url) no-repeat top center/cover;
   font-weight: 400;
-  
+
   font-size: 1.125rem;
 }
 
@@ -236,14 +236,10 @@ header img {
 
 .persona {
   height: 100vh;
-  background: rgba(0, 0, 0, 0)
-    linear-gradient(90deg, rgb(169, 119, 132) -0.03%, rgb(205, 184, 219) 99.92%)
-    repeat scroll 0% 0%;url("../assets/cabelo-3.png") no-repeat scroll
-    right center;
-    background: var(--bg-my) no-repeat top center/cover;
+  /*  */
+  background: var(--bg-my) no-repeat top center/cover;
   background-position-x: right;
   background-position-y: top;
-  
 
   border-top: 2px solid var(--border-top);
 }
@@ -259,10 +255,10 @@ header img {
   align-items: center;
 
   -moz-box-pack: justify;
-
-  overflow-x: hidden;
-  /* margin: 50px auto 0 auto; */
-  /* padding: 25px; */
+  /* 
+  overflow-x: hidden; */
+  margin: 50px auto 0 auto;
+  padding: 25px;
   /* flex-direction: column; */
 }
 
@@ -297,22 +293,21 @@ header img {
 
   flex-direction: column;
   align-self: flex-end;
-  margin-left: 48px;
 }
 
-.persona .is-my .social .icon {
+.persona .social icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.persona .is-my .social .icon img {
+.persona .social .icon img {
   width: 30px;
   border-radius: 10px;
   margin-right: 1rem;
   text-align: center;
 }
-.persona .is-my .social a {
+.persona .social a {
   background: rgba(0, 0, 0, 0)
     linear-gradient(90deg, rgb(169, 119, 132) -0.03%, rgb(64, 203, 246) 99.92%)
     repeat scroll 0% 0%;
@@ -342,23 +337,22 @@ header img {
   height: 100vh;
 
   border-top: 2px solid var(--border-top);
-  
 }
 
 .detail-summary details {
-  
-  width: 60%;
+  width: 100%;
   max-width: 600px;
-  
 }
 
-
 .detail-summary details summary {
-  background:  rgba(0, 0, 0, 0)
+  color: var(--text-color);
+  background: rgba(0, 0, 0, 0)
     linear-gradient(90deg, rgb(169, 119, 132) -0.03%, rgb(64, 203, 246) 99.92%)
     repeat scroll 0% 0%;
   padding: 2%;
   border-bottom: 2px solid #282828;
 }
 
-
+.detail-summary details p {
+  color: var(--text-color);
+}
