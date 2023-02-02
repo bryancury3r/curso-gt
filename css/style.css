@@ -246,9 +246,7 @@ header img {
 }
 
 .modal {
-  width: 60%;
-  min-width: 450px;
-  min-height: 200px;
+  margin: 0 auto;
   background-color: #ffffff96;
   backdrop-filter: blur(10px);
   padding: 50px;
@@ -304,26 +302,21 @@ header img {
   border-top: 2px solid var(--border-top);
 }
 
-.persona .is-my {
-  width: 100%;
-  margin: 40px;
-}
-
-.persona .is-my .text {
+.persona .text {
   width: 500px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #fff;
 
   -moz-box-pack: justify;
-  /* 
-  overflow-x: hidden; */
+  overflow-x: hidden;
   margin: 16px auto 0 auto;
   padding: 25px;
-  /* flex-direction: column; */
+  flex-direction: column;
 }
 
-.persona .is-my h2 {
+.persona h2 {
   color: rgb(169, 119, 132);
   background: rgba(0, 0, 0, 0)
     linear-gradient(90deg, rgb(169, 119, 132) -0.03%, rgb(64, 203, 246) 99.92%)
@@ -338,18 +331,11 @@ header img {
   /* margin: 0 40px; */
 }
 
-.persona .is-my p {
-  line-height: 150%;
-  letter-spacing: -0.05em;
-  text-align: left;
-  font-weight: 400;
-  color: rgb(248, 248, 250);
-  font-size: 1.125rem;
-}
-
-.persona .is-my .social {
+.persona .social {
+  width: 50%;
   display: flex;
-
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   /* align-self: flex-end; */
 }
@@ -383,7 +369,7 @@ header img {
   transition: all 0.2s ease-in 0s;
 }
 
-.persona .is-my .social a:hover {
+.persona .social a:hover {
   opacity: 1;
 }
 
@@ -420,22 +406,20 @@ header img {
 
 @media (max-width: 600px) {
   body {
-    width: 414px;
-    padding: 16px;
+    width: 375px;
+    height: 100vh;
   }
-  .persona,
-  .is-my {
-    width: 100%;
+  .persona {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
-  .persona .is-my h2 {
+  .persona h2 {
     font-size: 32px;
   }
 
-  .persona .is-my .text {
+  .persona .text {
     width: 100%;
   }
 
@@ -445,11 +429,16 @@ header img {
   }
 
   .modal {
-    padding: 16px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 900px) {
+  body {
+    width: 100%;
+  }
   .section-main {
     display: flex;
     align-items: center;
@@ -457,9 +446,6 @@ header img {
   }
 
   .modal {
-    min-width: 400px;
-    padding: 20px;
+    width: 100%;
   }
 }
-
-@me;
